@@ -100,7 +100,7 @@ class PrivateUserApiTests(TestCase):
     def setUp(self):
         self.user = create_user(
             email='test@testdomain.com',
-            password='testpassword'
+            password='testpassword',
             name='name'
         )
         self.client = APIClient()

@@ -16,7 +16,7 @@ class CreateTokenView(ObtainAuthToken):
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
 
 
-class ManageUserView(generic.RetrieveUpdateAPIView):
+class ManageUserView(generics.RetrieveUpdateAPIView):
     """ manage the authenticated user """
     serializer_class = UserSerializer
     authentication_classes = (authentication.TokenAuthentication,)
